@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vrat Bhog Makhana — Premium Mithila Makhana | Sitamarhi, Bihar</title>
+<meta name="description" content="Premium phool makhana and roasted makhana snacks from Mithila's ponds, packed fresh in Sitamarhi, Bihar. Order on WhatsApp or call for same-day dispatch.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%237A1F2B'/%3E%3Cpath d='M50 20c8 10 8 20 0 30-8-10-8-20 0-30zM50 80c-8-10-8-20 0-30 8 10 8 20 0 30zM20 50c10-8 20-8 30 0-10 8-20 8-30 0zM80 50c-10 8-20 8-30 0 10-8 20-8 30 0z' fill='%23B9852A'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F6EFE1;
+    --card:#FFFBF2;
+    --ink:#2C2117;
+    --ink-soft:#5B4C3C;
+    --maroon:#7A1F2B;
+    --maroon-dark:#5C1620;
+    --gold:#B9852A;
+    --green:#3F5B41;
+    --line: rgba(44,33,23,0.14);
+    --radius: 6px;
+    --shadow: 0 10px 30px rgba(44,33,23,0.10);
+    --maxw: 1180px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Manrope',sans-serif;
+    font-size:16px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    color:var(--ink);
+    margin:0 0 .4em 0;
+    line-height:1.15;
+    font-weight:600;
+  }
+  p{margin:0 0 1em 0; color:var(--ink-soft); max-width:62ch;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  section{padding:96px 0;}
+  @media (max-width:820px){ section{padding:64px 0;} }
+  @media (max-width:520px){ section{padding:52px 0;} .wrap{padding:0 18px;} }
+
+  :focus-visible{outline:3px solid var(--gold); outline-offset:2px;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; transition-duration:0.001ms !important;}
+  }
+
+  /* Buttons */
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 26px;
+    border-radius:var(--radius);
+    font-weight:700;
+    font-size:15px;
+    border:2px solid transparent;
+    cursor:pointer;
+    white-space:nowrap;
+  }
+  .btn-fill{ background:var(--green); color:#FFF8EA; }
+  .btn-fill:hover{ background:#33492F; }
+  .btn-outline{ background:transparent; border-color:var(--maroon); color:var(--maroon); }
+  .btn-outline:hover{ background:var(--maroon); color:#FFF8EA; }
+  .btn-small{ padding:9px 16px; font-size:13.5px; border-radius:5px; }
+
+  /* Header */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(246,239,225,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .headbar{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 24px; max-width:var(--maxw); margin:0 auto;
+  }
+  .logo{
+    display:flex; align-items:center; gap:10px;
+    font-family:'Fraunces',serif; font-weight:600; font-size:20px; color:var(--maroon);
+  }
+  .logo svg{width:30px; height:30px; flex:none;}
+  nav.mainnav{display:flex; gap:30px; align-items:center;}
+  nav.mainnav a{font-weight:600; font-size:14.5px; color:var(--ink);}
+  nav.mainnav a:hover{color:var(--maroon);}
+  .head-actions{display:flex; align-items:center; gap:12px;}
+  .hamburger{display:none; background:none; border:none; cursor:pointer; padding:6px;}
+  .hamburger svg{width:26px;height:26px;}
+
+  @media (max-width:900px){
+    nav.mainnav{
+      position:absolute; top:100%; left:0; right:0;
+      background:var(--card); border-bottom:1px solid var(--line);
+      flex-direction:column; align-items:flex-start; gap:0;
+      max-height:0; overflow:hidden; transition:max-height .25s ease;
+    }
+    nav.mainnav.open{max-height:320px;}
+    nav.mainnav a{padding:14px 24px; width:100%; border-bottom:1px solid var(--line);}
+    .hamburger{display:block;}
+    .head-actions .btn span.longlabel{display:none;}
+  }
+  @media (min-width:901px){ .hamburger{display:none;} }
+
+  /* Hero */
+  .hero{
+    position:relative;
+    padding:90px 0 130px;
+    overflow:visible;
+  }
+  .hero .wrap{
+    display:grid; grid-template-columns:1.1fr 0.9fr; gap:20px; align-items:center;
+  }
+  .hero h1{ font-size:clamp(34px,5vw,54px); max-width:16ch; }
+  .hero .proof{ color:var(--maroon); font-weight:700; font-size:14.5px; letter-spacing:.02em; margin-bottom:14px; }
+  .hero p.sub{ font-size:17.5px; max-width:44ch; }
+  .hero-ctas{ display:flex; gap:14px; margin-top:28px; flex-wrap:wrap; }
+  .hero-visual{ position:relative; }
+  .hero-visual svg{ width:100%; height:auto; position:relative; right:-40px; }
+  @media (max-width:900px){
+    .hero .wrap{grid-template-columns:1fr;}
+    .hero-visual{order:-1; max-width:280px; margin:0 auto 20px;}
+    .hero-visual svg{right:0;}
+  }
+
+  /* Trust strip - overlaps hero slightly for layout-break moment */
+  .trust{
+    background:var(--maroon);
+    color:#FCEFD9;
+    margin-top:-64px;
+    position:relative;
+    z-index:5;
+    border-radius:var(--radius);
+    padding:0;
+  }
+  .trust .wrap{
+    display:flex; flex-wrap:wrap;
+    padding:0;
+  }
+  .trust .stat{
+    flex:1 1 220px;
+    padding:34px 28px;
+    border-right:1px solid rgba(255,255,255,0.18);
+  }
+  .trust .stat:last-child{border-right:none;}
+  .trust .stat b{ display:block; font-family:'Fraunces',serif; font-size:30px; font-weight:600; color:#FCEFD9;}
+  .trust .stat span{ font-size:13.5px; color:#EAD3B8; }
+  @media (max-width:900px){
+    .trust{margin-top:-40px;}
+    .trust .stat{flex:1 1 45%; border-right:none; border-bottom:1px solid rgba(255,255,255,.18);}
+  }
+
+  /* Section heads */
+  .sechead{ margin-bottom:44px; max-width:640px; }
+  .sechead h2{ font-size:clamp(28px,3.4vw,38px); }
+  .petal-row{ display:flex; gap:6px; margin-bottom:14px; }
+  .petal-row svg{width:20px;height:20px;}
+
+  /* Products - bento asymmetric grid */
+  .grid-products{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:22px;
+  }
+  .pcard{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:26px;
+    display:flex; flex-direction:column;
+    box-shadow:var(--shadow);
+  }
+  .pcard.flagship{
+    grid-column:span 2; grid-row:span 1;
+    background:linear-gradient(135deg, #7A1F2B 0%, #5C1620 100%);
+    color:#FCEFD9;
+    display:grid; grid-template-columns:1fr auto; gap:20px; align-items:center;
+  }
+  .pcard.flagship h3, .pcard.flagship p{ color:#FCEFD9; }
+  .pcard.flagship .tag{
+    background:var(--gold); color:#2C2117; font-weight:700; font-size:12px;
+    padding:4px 10px; border-radius:20px; display:inline-block; margin-bottom:10px;
+  }
+  .pcard .icon{width:40px; height:40px; margin-bottom:14px;}
+  .pcard h3{font-size:19px; margin-bottom:6px;}
+  .pcard p{font-size:14.5px; margin-bottom:14px;}
+  .pcard .price{font-family:'Fraunces',serif; font-weight:600; font-size:22px; color:var(--maroon); margin-bottom:14px;}
+  .pcard.flagship .price{color:#F3D9A6;}
+  .pcard .wa-mini{margin-top:auto;}
+
+  @media (max-width:980px){
+    .grid-products{grid-template-columns:repeat(2,1fr);}
+    .pcard.flagship{grid-column:span 2; grid-template-columns:1fr;}
+  }
+  @media (max-width:560px){
+    .grid-products{grid-template-columns:1fr;}
+    .pcard.flagship{grid-column:span 1;}
+  }
+
+  /* About */
+  .about-wrap{ display:grid; grid-template-columns:280px 1fr; gap:60px; align-items:start; }
+  .avatar{
+    width:150px; height:150px; border-radius:50%;
+    background:var(--maroon); color:#FCEFD9;
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Fraunces',serif; font-size:44px; font-weight:600;
+    margin-bottom:18px;
+    border:5px solid var(--gold);
+  }
+  .about-owner-name{font-weight:800; font-size:15px;}
+  .about-owner-role{font-size:13px; color:var(--ink-soft);}
+  .diffs{ list-style:none; padding:0; margin:26px 0 0; display:grid; grid-template-columns:1fr 1fr; gap:14px 26px; }
+  .diffs li{ display:flex; gap:10px; font-size:14.5px; font-weight:600; align-items:flex-start;}
+  .diffs li svg{width:18px;height:18px; flex:none; margin-top:2px;}
+  @media (max-width:820px){
+    .about-wrap{grid-template-columns:1fr;}
+    .diffs{grid-template-columns:1fr;}
+  }
+
+  /* Gallery - varied grid */
+  .gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    grid-auto-rows:140px;
+    gap:14px;
+  }
+  .gallery-grid img{ width:100%; height:100%; object-fit:cover; border-radius:var(--radius); }
+  .g1{grid-column:span 3; grid-row:span 2;}
+  .g2{grid-column:span 3; grid-row:span 1;}
+  .g3{grid-column:span 3; grid-row:span 1;}
+  .g4{grid-column:span 2; grid-row:span 2;}
+  .g5{grid-column:span 2; grid-row:span 2;}
+  .g6{grid-column:span 2; grid-row:span 2;}
+  .g7{grid-column:span 6; grid-row:span 1;}
+  @media (max-width:820px){
+    .gallery-grid{grid-template-columns:repeat(2,1fr); grid-auto-rows:150px;}
+    .g1,.g2,.g3,.g4,.g5,.g6,.g7{grid-column:span 1; grid-row:span 1;}
+    .g1{grid-column:span 2; grid-row:span 2;}
+  }
+
+  /* Testimonials - staggered */
+  .testi{ display:flex; flex-direction:column; gap:26px; max-width:760px; }
+  .testi .card{
+    background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:24px 28px; box-shadow:var(--shadow);
+  }
+  .testi .card:nth-child(1){margin-right:14%;}
+  .testi .card:nth-child(2){margin-left:14%;}
+  .testi .card:nth-child(3){margin-right:8%;}
+  @media (max-width:700px){ .testi .card{margin:0 !important;} }
+  .stars{display:flex; gap:3px; margin-bottom:10px;}
+  .stars svg{width:16px;height:16px;}
+  .testi .who{font-weight:800; font-size:14px; margin-top:10px;}
+  .testi .where{font-size:12.5px; color:var(--ink-soft);}
+  .testi p{font-size:15px; margin-bottom:0;}
+
+  /* Pricing */
+  .price-list{ max-width:640px; }
+  .price-row{
+    display:flex; justify-content:space-between; align-items:baseline;
+    padding:18px 0; border-bottom:1px solid var(--line);
+    gap:20px;
+  }
+  .price-row .pname{font-weight:700; font-size:16px;}
+  .price-row .pnote{font-size:13px; color:var(--ink-soft); display:block; margin-top:2px;}
+  .price-row .pval{font-family:'Fraunces',serif; font-weight:600; font-size:19px; color:var(--maroon); white-space:nowrap;}
+
+  /* Contact */
+  .contact-wrap{ display:grid; grid-template-columns:1fr 1fr; gap:50px; align-items:start; }
+  .contact-wrap iframe{ width:100%; height:320px; border:1px solid var(--line); border-radius:var(--radius); }
+  .hours-grid{ display:grid; grid-template-columns:1fr 1fr; gap:8px 20px; margin:18px 0 28px; font-size:14.5px; }
+  .hours-grid .d{font-weight:700;}
+  .contact-methods{ display:flex; flex-direction:column; gap:14px; }
+  .contact-methods a{ display:flex; align-items:center; gap:12px; font-weight:700; font-size:15px; }
+  .contact-methods svg{width:22px;height:22px; color:var(--maroon);}
+  @media (max-width:820px){ .contact-wrap{grid-template-columns:1fr;} }
+
+  /* Footer */
+  footer{ background:var(--ink); color:#EAD9C4; padding:64px 0 26px; margin-top:20px; }
+  .foot-wrap{ display:flex; flex-wrap:wrap; justify-content:space-between; gap:40px; }
+  footer h3{ color:#FCEFD9; font-size:20px; }
+  footer .fcol a{ display:block; margin-bottom:10px; font-size:14px; color:#CBB89C; }
+  footer .fcol a:hover{ color:#FCEFD9; }
+  footer .fcol h4{ font-size:13px; letter-spacing:.03em; color:#EAD3B8; margin-bottom:14px; font-weight:700;}
+  .foot-bottom{
+    max-width:var(--maxw); margin:50px auto 0; padding:22px 24px 0;
+    border-top:1px solid rgba(255,255,255,0.12);
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+    font-size:12.5px; color:#9C8B74;
+  }
+
+  /* Sticky mobile action bar */
+  .mobile-bar{
+    display:none;
+    position:fixed; bottom:0; left:0; right:0; z-index:60;
+    background:var(--card); border-top:1px solid var(--line);
+    padding:10px 14px; gap:10px;
+    box-shadow:0 -6px 18px rgba(0,0,0,0.08);
+  }
+  @media (max-width:768px){
+    .mobile-bar{display:flex;}
+    body{padding-bottom:70px;}
+  }
+  .mobile-bar a{ flex:1; text-align:center; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="headbar">
+    <a href="#top" class="logo">
+      <svg viewBox="0 0 100 100" fill="none"><circle cx="50" cy="50" r="48" fill="#7A1F2B"/><path d="M50 20c8 10 8 20 0 30-8-10-8-20 0-30zM50 80c-8-10-8-20 0-30 8 10 8 20 0 30zM20 50c10-8 20-8 30 0-10 8-20 8-30 0zM80 50c-10 8-20 8-30 0 10-8 20-8 30 0z" fill="#B9852A"/></svg>
+      Vrat Bhog Makhana
+    </a>
+    <nav class="mainnav" id="mainnav">
+      <a href="#top">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="head-actions">
+      <a class="btn btn-outline btn-small" href="tel:+919771623395"><span class="longlabel">Call</span></a>
+      <a class="btn btn-fill btn-small" href="https://wa.me/919771623395?text=Hi%2C%20I%20found%20Vrat%20Bhog%20Makhana%20online%20and%20would%20like%20to%20know%20more%20about%20your%20makhana%20packs." target="_blank" rel="noopener">WhatsApp</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#2C2117" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="proof">Grown in Mithila's ponds · Packed fresh in Sitamarhi</div>
+        <h1>Phool makhana the way your grandmother remembers it — light, clean, and roasted the same day it's packed.</h1>
+        <p class="sub">A small family business in Sitamarhi bringing Bihar's own Mithila makhana to your kitchen — for vrat, for evening chai, for gifting.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-fill" href="https://wa.me/919771623395?text=Namaste%2C%20I%20want%20to%20order%20makhana%20from%20Vrat%20Bhog%20Makhana.%20Please%20share%20your%20current%20packs%20and%20prices." target="_blank" rel="noopener">Order on WhatsApp</a>
+          <a class="btn btn-outline" href="tel:+919771623395">Call Ravi Ji</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <svg viewBox="0 0 420 380" xmlns="http://www.w3.org/2000/svg">
+          <ellipse cx="210" cy="330" rx="160" ry="26" fill="#7A1F2B" opacity="0.10"/>
+          <path d="M70 250c0-70 60-130 140-130s140 60 140 130H70z" fill="#B9852A"/>
+          <path d="M70 250c0-70 60-130 140-130s140 60 140 130" fill="none" stroke="#7A1F2B" stroke-width="6"/>
+          <ellipse cx="210" cy="252" rx="150" ry="20" fill="#FFFBF2"/>
+          <g fill="#F6EFE1" stroke="#7A1F2B" stroke-width="2.5">
+            <circle cx="140" cy="235" r="16"/>
+            <circle cx="180" cy="220" r="18"/>
+            <circle cx="225" cy="230" r="17"/>
+            <circle cx="265" cy="222" r="16"/>
+            <circle cx="300" cy="238" r="15"/>
+            <circle cx="160" cy="205" r="14"/>
+            <circle cx="205" cy="196" r="15"/>
+            <circle cx="248" cy="200" r="14"/>
+            <circle cx="285" cy="210" r="13"/>
+          </g>
+          <g transform="translate(300,60)">
+            <path d="M0 30c6 6 6 16 0 22-6-6-6-16 0-22zM0 52c-6-6-6-16 0-22 6 6 6 16 0 22zM-11 41c6-6 16-6 22 0-6 6-16 6-22 0zM11 41c-6 6-16 6-22 0 6-6 16-6 22 0z" fill="#B9852A"/>
+          </g>
+          <g transform="translate(45,70)">
+            <path d="M0 22c4.5 4.5 4.5 12 0 16.5-4.5-4.5-4.5-12 0-16.5zM0 39c-4.5-4.5-4.5-12 0-16.5 4.5 4.5 4.5 12 0 16.5zM-8 30.5c4.5-4.5 12-4.5 16.5 0-4.5 4.5-12 4.5-16.5 0zM8 30.5c-4.5 4.5-12 4.5-16.5 0 4.5-4.5 12-4.5 16.5 0z" fill="#7A1F2B" opacity="0.7"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <div class="wrap">
+    <div class="trust">
+      <div class="wrap" style="padding:0;">
+        <div class="stat"><b>2+ yrs</b><span>Serving Sitamarhi households</span></div>
+        <div class="stat"><b>500+</b><span>Happy families reordering</span></div>
+        <div class="stat"><b>0%</b><span>Preservatives or artificial colour</span></div>
+        <div class="stat"><b>48 hrs</b><span>From roasting to your doorstep</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="wrap">
+      <div class="sechead">
+        <div class="petal-row">
+          <svg viewBox="0 0 24 24"><path d="M12 3c3 4 3 8 0 11-3-3-3-7 0-11zM12 21c-3-4-3-8 0-11 3 3 3 7 0 11zM3 12c4-3 8-3 11 0-3 3-7 3-11 0zM21 12c-4 3-8 3-11 0 3-3 7-3 11 0z" fill="#B9852A"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 3c3 4 3 8 0 11-3-3-3-7 0-11zM12 21c-3-4-3-8 0-11 3 3 3 7 0 11zM3 12c4-3 8-3 11 0-3 3-7 3-11 0zM21 12c-4 3-8 3-11 0 3-3 7-3 11 0z" fill="#7A1F2B"/></svg>
+        </div>
+        <h2>Our Makhana, Packed Fresh</h2>
+        <p>Raw phool makhana, roasted flavours, and vrat-friendly packs — each batch roasted in small quantities so it reaches you crisp, not stale.</p>
+      </div>
+
+      <div class="grid-products">
+
+        <div class="pcard flagship">
+          <div>
+            <span class="tag">Best for gifting</span>
+            <h3>Festive Gift Combo Box</h3>
+            <p>Four flavours in one box — Classic Salt, Peri Peri, Pudina, and Raw Phool Makhana. Comes in a printed box, ready to gift this festive season.</p>
+            <div class="price">₹899 <span style="font-size:13px; font-weight:500;">/ box of 4</span></div>
+          </div>
+          <a class="btn btn-fill wa-mini" href="https://wa.me/919771623395?text=Hi%2C%20I%27d%20like%20to%20order%20the%20Festive%20Gift%20Combo%20Box%20(4%20flavours%2C%20%E2%82%B9899).%20Please%20confirm%20availability." target="_blank" rel="noopener">Order this box</a>
+        </div>
+
+        <div class="pcard">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#7A1F2B" stroke-width="1.6"><circle cx="8" cy="10" r="3"/><circle cx="14" cy="8" r="3"/><circle cx="17" cy="14" r="3"/><circle cx="10" cy="16" r="3"/></svg>
+          <h3>Premium Phool Makhana (Raw)</h3>
+          <p>Large-grade, sun-dried lotus seeds — roast at home your way, or use in kheer and curries.</p>
+          <div class="price">₹450 <span style="font-size:12px; font-weight:500;">/ 250g</span></div>
+          <a class="btn btn-outline btn-small wa-mini" href="https://wa.me/919771623395?text=Hi%2C%20I%27d%20like%20to%20order%20Premium%20Phool%20Makhana%20(Raw%2C%20250g%2C%20%E2%82%B9450).%20Please%20confirm%20availability." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+
+        <div class="pcard">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#7A1F2B" stroke-width="1.6"><path d="M4 12c2-6 14-6 16 0-2 6-14 6-16 0z"/><circle cx="12" cy="12" r="1.4" fill="#7A1F2B"/></svg>
+          <h3>Roasted Makhana — Peri Peri</h3>
+          <p>Crunchy roasted makhana tossed with a tangy peri peri masala. A favourite with evening chai.</p>
+          <div class="price">₹180 <span style="font-size:12px; font-weight:500;">/ 100g</span></div>
+          <a class="btn btn-outline btn-small wa-mini" href="https://wa.me/919771623395?text=Hi%2C%20I%27d%20like%20to%20order%20Roasted%20Makhana%20-%20Peri%20Peri%20(100g%2C%20%E2%82%B9180).%20Please%20confirm%20availability." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+
+        <div class="pcard">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#3F5B41" stroke-width="1.6"><path d="M12 3v9M8 8l4-5 4 5"/><path d="M5 14c0 5 3 7 7 7s7-2 7-7"/></svg>
+          <h3>Roasted Makhana — Pudina Twist</h3>
+          <p>Light mint-and-herb roast, mild enough for kids, sharp enough for adults who love chatpata snacks.</p>
+          <div class="price">₹180 <span style="font-size:12px; font-weight:500;">/ 100g</span></div>
+          <a class="btn btn-outline btn-small wa-mini" href="https://wa.me/919771623395?text=Hi%2C%20I%27d%20like%20to%20order%20Roasted%20Makhana%20-%20Pudina%20Twist%20(100g%2C%20%E2%82%B9180).%20Please%20confirm%20availability." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+
+        <div class="pcard">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#7A1F2B" stroke-width="1.6"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M4 9h16M9 4v16"/></svg>
+          <h3>Classic Himalayan Salt</h3>
+          <p>Just makhana, a touch of ghee, and pink Himalayan salt. Simple, roasted fresh every week.</p>
+          <div class="price">₹160 <span style="font-size:12px; font-weight:500;">/ 100g</span></div>
+          <a class="btn btn-outline btn-small wa-mini" href="https://wa.me/919771623395?text=Hi%2C%20I%27d%20like%20to%20order%20Classic%20Himalayan%20Salt%20Makhana%20(100g%2C%20%E2%82%B9160).%20Please%20confirm%20availability." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+
+        <div class="pcard">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#7A1F2B" stroke-width="1.6"><path d="M12 2l2.5 5 5.5.8-4 4 1 5.5L12 15l-5 2.3 1-5.5-4-4 5.5-.8z"/></svg>
+          <h3>Vrat Special Makhana</h3>
+          <p>Unsalted, sattvic roast made without onion, garlic or table salt — for navratri and other vrats.</p>
+          <div class="price">₹200 <span style="font-size:12px; font-weight:500;">/ 150g</span></div>
+          <a class="btn btn-outline btn-small wa-mini" href="https://wa.me/919771623395?text=Hi%2C%20I%27d%20like%20to%20order%20Vrat%20Special%20Makhana%20(150g%2C%20%E2%82%B9200).%20Please%20confirm%20availability." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+
+        <div class="pcard">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="#7A1F2B" stroke-width="1.6"><path d="M4 8h16v10a2 2 0 01-2 2H6a2 2 0 01-2-2V8zM4 8l3-4h10l3 4"/></svg>
+          <h3>Makhana Kheer Mix</h3>
+          <p>Pre-portioned makhana, dry fruits and cardamom — just add milk. Ready for festival kheer in minutes.</p>
+          <div class="price">₹220 <span style="font-size:12px; font-weight:500;">/ 200g</span></div>
+          <a class="btn btn-outline btn-small wa-mini" href="https://wa.me/919771623395?text=Hi%2C%20I%27d%20like%20to%20order%20Makhana%20Kheer%20Mix%20(200g%2C%20%E2%82%B9220).%20Please%20confirm%20availability." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" style="background:var(--card); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+    <div class="wrap about-wrap">
+      <div>
+        <div class="avatar">R</div>
+        <div class="about-owner-name">Ravi</div>
+        <div class="about-owner-role">Owner, Vrat Bhog Makhana</div>
+      </div>
+      <div>
+        <h2>From my grandfather's pond to your kitchen shelf</h2>
+        <p>My grandfather grew makhana in the ponds around Sitamarhi long before it became a "superfood" anywhere else. I grew up watching the seeds being harvested by hand in the monsoon and roasted in small batches through winter — that's the only way I know how to do it.</p>
+        <p>We started Vrat Bhog Makhana a little over two years ago because too much of what's sold as "premium makhana" in shops is old stock, over-roasted, or bulked up with fillers. We roast in small batches, pack quickly, and ship the same week — nothing sits in a warehouse.</p>
+        <p>If you're buying for a vrat, a festival gift, or just your evening chai, I'd rather you message me directly on WhatsApp than order blind — I'll tell you honestly which pack suits your need.</p>
+        <ul class="diffs">
+          <li><svg viewBox="0 0 24 24"><path d="M12 3c3 4 3 8 0 11-3-3-3-7 0-11zM12 21c-3-4-3-8 0-11 3 3 3 7 0 11zM3 12c4-3 8-3 11 0-3 3-7 3-11 0zM21 12c-4 3-8 3-11 0 3-3 7-3 11 0z" fill="#B9852A"/></svg> Sourced directly from Mithila's ponds</li>
+          <li><svg viewBox="0 0 24 24"><path d="M12 3c3 4 3 8 0 11-3-3-3-7 0-11zM12 21c-3-4-3-8 0-11 3 3 3 7 0 11zM3 12c4-3 8-3 11 0-3 3-7 3-11 0zM21 12c-4 3-8 3-11 0 3-3 7-3 11 0z" fill="#7A1F2B"/></svg> Roasted fresh in small weekly batches</li>
+          <li><svg viewBox="0 0 24 24"><path d="M12 3c3 4 3 8 0 11-3-3-3-7 0-11zM12 21c-3-4-3-8 0-11 3 3 3 7 0 11zM3 12c4-3 8-3 11 0-3 3-7 3-11 0zM21 12c-4 3-8 3-11 0 3-3 7-3 11 0z" fill="#B9852A"/></svg> Zero preservatives, zero artificial colour</li>
+          <li><svg viewBox="0 0 24 24"><path d="M12 3c3 4 3 8 0 11-3-3-3-7 0-11zM12 21c-3-4-3-8 0-11 3 3 3 7 0 11zM3 12c4-3 8-3 11 0-3 3-7 3-11 0zM21 12c-4 3-8 3-11 0 3-3 7-3 11 0z" fill="#7A1F2B"/></svg> Sattvic vrat recipes tested by the family</li>
+          <li><svg viewBox="0 0 24 24"><path d="M12 3c3 4 3 8 0 11-3-3-3-7 0-11zM12 21c-3-4-3-8 0-11 3 3 3 7 0 11zM3 12c4-3 8-3 11 0-3 3-7 3-11 0zM21 12c-4 3-8 3-11 0 3-3 7-3 11 0z" fill="#B9852A"/></svg> Packed and dispatched within 48 hours</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <div class="wrap">
+      <div class="sechead">
+        <h2>A Look Inside</h2>
+        <p>From the pond to the roasting pan to your packet.</p>
+      </div>
+      <div class="gallery-grid">
+        <img class="g1" loading="lazy" alt="Bowl of roasted makhana seeds" src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=800&auto=format&fit=crop" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect width=%22400%22 height=%22400%22 fill=%22%23EAD9C4%22/%3E%3C/svg%3E';">
+        <img class="g2" loading="lazy" alt="Lotus flower in a pond" src="https://images.unsplash.com/photo-1508184964240-9f9483439871?w=800&auto=format&fit=crop" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect width=%22400%22 height=%22400%22 fill=%22%23EAD9C4%22/%3E%3C/svg%3E';">
+        <img class="g3" loading="lazy" alt="Spices and masala for roasting" src="https://images.unsplash.com/photo-1596797882970-9c1b09da963f?w=800&auto=format&fit=crop" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect width=%22400%22 height=%22400%22 fill=%22%23EAD9C4%22/%3E%3C/svg%3E';">
+        <img class="g4" loading="lazy" alt="Packed makhana pouches" src="https://images.unsplash.com/photo-1607349913338-fca6f7fc42d0?w=800&auto=format&fit=crop" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect width=%22400%22 height=%22400%22 fill=%22%23EAD9C4%22/%3E%3C/svg%3E';">
+        <img class="g5" loading="lazy" alt="Bowl of trail mix and nuts" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=800&auto=format&fit=crop" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect width=%22400%22 height=%22400%22 fill=%22%23EAD9C4%22/%3E%3C/svg%3E';">
+        <img class="g6" loading="lazy" alt="Traditional Indian sweets and festival food" src="https://images.unsplash.com/photo-1615485500704-8e990f9900f7?w=800&auto=format&fit=crop" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22400%22%3E%3Crect width=%22400%22 height=%22400%22 fill=%22%23EAD9C4%22/%3E%3C/svg%3E';">
+        <img class="g7" loading="lazy" alt="Wide shot of a village pond used for makhana farming" src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=1200&auto=format&fit=crop" onerror="this.onerror=null;this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22800%22 height=%22300%22%3E%3Crect width=%22800%22 height=%22300%22 fill=%22%23EAD9C4%22/%3E%3C/svg%3E';">
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section style="background:var(--card); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="sechead">
+        <h2>What Neighbours Are Saying</h2>
+      </div>
+      <div class="testi">
+        <div class="card">
+          <div class="stars">
+            <svg viewBox="0 0 20 20" fill="#B9852A"><path d="M10 1l2.9 6 6.6.8-4.8 4.6 1.2 6.6L10 15.9 4.1 19l1.2-6.6L.5 7.8l6.6-.8z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#B9852A"><path d="M10 1l2.9 6 6.6.8-4.8 4.6 1.2 6.6L10 15.9 4.1 19l1.2-6.6L.5 7.8l6.6-.8z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#B9852A"><path d="M10 1l2.9 6 6.6.8-4.8 4.6 1.2 6.6L10 15.9 4.1 19l1.2-6.6L.5 7.8l6.6-.8z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#B9852A"><path d="M10 1l2.9 6 6.6.8-4.8 4.6 1.2 6.6L10 15.9 4.1 19l1.2-6.6L.5 7.8l6.6-.8z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#B9852A"><path d="M10 1l2.9 6 6.6.8-4.8 4.6 1.2 6.6L10 15.9 4.1 19l1.2-6.6L.5 7.8l6.6-.8z"/></svg>
+          </div>
+          <p>I keep the Vrat Special pack at home for every navratri now — no onion-garlic worry, and it actually tastes fresh, not like it's been sitting in a shop for months.</p>
+          <div class="who">Anita Devi</div>
+          <div class="where">Dumra, Sitamarhi</div>
+        </div>
+        <div class="card">
+          <div class="stars">
+            <svg viewBox="0 0 20 20" fill="#B9852A"><path d="M10 1l2.9 6 6.6.8-4.8 4.6 1.2 6.6L10 15.9 4.1 19l1.2-6.6L.5 7.8l6.6-.8z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#B9852A"><path d="M10 1l2.9 6 6.6.8-4.8 4.6 1.2 6.6L10 15.9 4.1 19l1.2-6.6L.5 7.8l6.6-.8z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#B9852A"><path d="M10 1l2.9 6 6.6.8-4.8 4.6 1.2 6.6L10 15.9 4.1 19l1.2-6.6L.5 7.8l6.6-.8z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#B9852A"><path d="M10 1l2.9 6 6.6.8-4.8 4.6 1.2 6.6L10 15.9 4.1 19l1.2-6.6L.5 7.8l6.6-.8z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#B9852A"><path d="M10 1l2.9 6 6.6.8-4.8 4.6 1.2 6.6L10 15.9 4.1 19l1.2-6.6L.5 7.8l6.6-.8z"/></svg>
+          </div>
+          <p>Ordered the gift box for Diwali to send to my sister in Patna. Reached in two days, packaging looked proper premium, not local dukan wala box.</p>
+          <div class="who">Suresh Yadav</div>
+          <div class="where">Riga, Sitamarhi</div>
+        </div>
+        <div class="card">
+          <div class="stars">
+            <svg viewBox="0 0 20 20" fill="#B9852A"><path d="M10 1l2.9 6 6.6.8-4.8 4.6 1.2 6.6L10 15.9 4.1 19l1.2-6.6L.5 7.8l6.6-.8z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#B9852A"><path d="M10 1l2.9 6 6.6.8-4.8 4.6 1.2 6.6L10 15.9 4.1 19l1.2-6.6L.5 7.8l6.6-.8z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#B9852A"><path d="M10 1l2.9 6 6.6.8-4.8 4.6 1.2 6.6L10 15.9 4.1 19l1.2-6.6L.5 7.8l6.6-.8z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#B9852A"><path d="M10 1l2.9 6 6.6.8-4.8 4.6 1.2 6.6L10 15.9 4.1 19l1.2-6.6L.5 7.8l6.6-.8z"/></svg>
+            <svg viewBox="0 0 20 20" fill="#B9852A"><path d="M10 1l2.9 6 6.6.8-4.8 4.6 1.2 6.6L10 15.9 4.1 19l1.2-6.6L.5 7.8l6.6-.8z"/></svg>
+          </div>
+          <p>Peri peri makhana khatam nahi hota ghar mein, bachche bhi mangte rehte hain. Ravi ji khud WhatsApp par baat karke order confirm karte hain, achha lagta hai.</p>
+          <div class="who">Meena Kumari</div>
+          <div class="where">Pupri, Sitamarhi</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing">
+    <div class="wrap">
+      <div class="sechead">
+        <h2>Simple, Honest Pricing</h2>
+        <p>What you see is what you pay — no hidden "handling" charges, no fake discounts.</p>
+      </div>
+      <div class="price-list">
+        <div class="price-row">
+          <div><span class="pname">Premium Phool Makhana (Raw)</span><span class="pnote">250g pack</span></div>
+          <div class="pval">₹450</div>
+        </div>
+        <div class="price-row">
+          <div><span class="pname">Roasted Makhana — Peri Peri</span><span class="pnote">100g pack</span></div>
+          <div class="pval">₹180</div>
+        </div>
+        <div class="price-row">
+          <div><span class="pname">Roasted Makhana — Pudina Twist</span><span class="pnote">100g pack</span></div>
+          <div class="pval">₹180</div>
+        </div>
+        <div class="price-row">
+          <div><span class="pname">Classic Himalayan Salt</span><span class="pnote">100g pack</span></div>
+          <div class="pval">₹160</div>
+        </div>
+        <div class="price-row">
+          <div><span class="pname">Vrat Special Makhana</span><span class="pnote">150g pack, unsalted</span></div>
+          <div class="pval">₹200</div>
+        </div>
+        <div class="price-row">
+          <div><span class="pname">Makhana Kheer Mix</span><span class="pnote">200g pack</span></div>
+          <div class="pval">₹220</div>
+        </div>
+        <div class="price-row">
+          <div><span class="pname">Festive Gift Combo Box</span><span class="pnote">4 flavours, gift-packed</span></div>
+          <div class="pval">₹899</div>
+        </div>
+      </div>
+      <a class="btn btn-fill" style="margin-top:26px;" href="https://wa.me/919771623395?text=Hi%2C%20I%20have%20a%20question%20about%20your%20makhana%20pricing%20and%20packs." target="_blank" rel="noopener">Ask about a pack on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="background:var(--card); border-top:1px solid var(--line);">
+    <div class="wrap">
+      <div class="sechead">
+        <h2>Visit or Order</h2>
+        <p>Based in Sitamarhi, Bihar — we take orders by phone and WhatsApp and dispatch across India.</p>
+      </div>
+      <div class="contact-wrap">
+        <iframe src="https://maps.google.com/maps?q=Sitamarhi%2C%20Bihar%2C%20India&output=embed" loading="lazy" title="Map to Vrat Bhog Makhana, Sitamarhi"></iframe>
+        <div>
+          <div class="hours-grid">
+            <div class="d">Monday – Saturday</div><div>9:00 AM – 8:00 PM</div>
+            <div class="d">Sunday</div><div>9:00 AM – 8:00 PM</div>
+          </div>
+          <div class="contact-methods">
+            <a href="tel:+919771623395"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6.6 10.8a15 15 0 006.6 6.6l2.2-2.2a1.5 1.5 0 011.5-.4c1.2.4 2.5.6 3.9.6a1.5 1.5 0 011.5 1.5V21a1.5 1.5 0 01-1.5 1.5C10.9 22.5 1.5 13.1 1.5 2.5A1.5 1.5 0 013 1h4.1a1.5 1.5 0 011.5 1.5c0 1.4.2 2.7.6 3.9a1.5 1.5 0 01-.4 1.5z"/></svg> +91 97716 23395</a>
+            <a href="https://wa.me/919771623395?text=Namaste%2C%20I%20want%20to%20know%20more%20about%20Vrat%20Bhog%20Makhana." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 12a8 8 0 10-14.9 4L4 21l5.2-1.4A8 8 0 0020 12z"/></svg> Chat on WhatsApp</a>
+            <a href="mailto:ranveer85190@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> ranveer85190@gmail.com</a>
+            <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.4"/></svg> Sitamarhi, Bihar, India</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-wrap">
+    <div class="fcol" style="max-width:280px;">
+      <h3>Vrat Bhog Makhana</h3>
+      <p style="color:#CBB89C; font-size:14px;">Premium Mithila makhana, fresh and naturally nutritious. Roasted in Sitamarhi, Bihar.</p>
+      <a class="btn btn-fill" style="margin-top:10px;" href="https://wa.me/919771623395?text=Namaste%2C%20I%20want%20to%20order%20makhana%20from%20Vrat%20Bhog%20Makhana." target="_blank" rel="noopener">Order on WhatsApp</a>
+    </div>
+    <div class="fcol">
+      <h4>QUICK LINKS</h4>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#pricing">Pricing</a>
+    </div>
+    <div class="fcol">
+      <h4>CONTACT</h4>
+      <a href="tel:+919771623395">+91 97716 23395</a>
+      <a href="mailto:ranveer85190@gmail.com">ranveer85190@gmail.com</a>
+      <a href="#contact">Sitamarhi, Bihar, India</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>© <span id="year"></span> Vrat Bhog Makhana. All rights reserved.</span>
+    <span>built with ❤️ by 21.coders</span>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn btn-outline" href="tel:+919771623395">Call</a>
+  <a class="btn btn-fill" href="https://wa.me/919771623395?text=Namaste%2C%20I%20want%20to%20order%20makhana%20from%20Vrat%20Bhog%20Makhana." target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  var hb = document.getElementById('hamburgerBtn');
+  var nav = document.getElementById('mainnav');
+  hb.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    hb.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ nav.classList.remove('open'); hb.setAttribute('aria-expanded','false'); });
+  });
+</script>
+
+</body>
+</html>
